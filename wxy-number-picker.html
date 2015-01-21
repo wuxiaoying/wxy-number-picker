@@ -1,0 +1,12 @@
+<link rel="import" href="/components/polymer/polymer.html">
+
+<polymer-element name="wxy-number-picker" attributes="label value">
+  <template>
+    <link rel="stylesheet" href="wxy-number-picker.css">
+    <div horizontal layout flex center center-justified>
+      <label for="picker" flex>{{label}}</label>
+      <div id="picker" flex>{{value}}</div>
+    </div>
+  </template>
+  <script src="wxy-number-picker.js"></script>
+</polymer-element>
