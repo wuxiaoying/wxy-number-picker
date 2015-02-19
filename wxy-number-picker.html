@@ -4,11 +4,11 @@
   <template>
     <link rel="stylesheet" href="wxy-number-picker.css">
     <div horizontal layout flex center center-justified>
-      <label for="picker"><h2>{{label}}</h2></label>
-      <div vertical layout>
-        <paper-icon-button src="../../images/icons/up-arrow.png" on-tap="{{incrementValue}}"></paper-icon-button>
+      <label for="picker"><h1>{{label}}</h1></label>
+      <div vertical layout center center-justified>
+        <div on-tap="{{decrementValue}}"><span class="subvalue">{{value-stepsize}}</span></div>
         <div id="picker"><span>{{value}}</span></div>
-        <paper-icon-button src="../../images/icons/down-arrow.png" on-tap="{{decrementValue}}"></paper-icon-button>
+        <div on-tap="{{incrementValue}}"><span class="subvalue">{{value + stepsize}}</span</div>
       </div>
     </div>
   </template>

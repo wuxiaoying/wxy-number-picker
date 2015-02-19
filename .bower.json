@@ -1,11 +1,11 @@
 {
   "name": "wxy-number-picker",
   "homepage": "https://github.com/wuxiaoying/wxy-number-picker",
-  "_release": "29551889b7",
+  "_release": "7c28ccc687",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "29551889b723c6b98706f0a88e37e68ec4ea3449"
+    "commit": "7c28ccc68777f9bbb37cae4bbb716b71dd69bf32"
   },
   "_source": "git://github.com/wuxiaoying/wxy-number-picker.git",
   "_target": "*",
