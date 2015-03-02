@@ -1,14 +1,14 @@
 <link rel="import" href="../polymer/polymer.html">
 
-<polymer-element name="wxy-number-picker" attributes="label value stepsize">
+<polymer-element name="wxy-number-picker" attributes="label value stepSize min max">
   <template>
     <link rel="stylesheet" href="wxy-number-picker.css">
-    <div horizontal layout flex center center-justified>
-      <label for="picker"><h1>{{label}}</h1></label>
-      <div vertical layout center center-justified>
-        <div on-tap="{{decrementValue}}"><span class="subvalue">{{value-stepsize}}</span></div>
-        <div id="picker"><span>{{value}}</span></div>
-        <div on-tap="{{incrementValue}}"><span class="subvalue">{{value + stepsize}}</span</div>
+    <div horizontal layout center center-justified>
+      <label id="label" for="picker">{{label}}</label>
+      <div vertical layout center center-justified id="container">
+        <div on-tap="{{decrementValue}}" class="subvalue">{{value - stepSize}}</div>
+        <div id="picker">{{value}}</div>
+        <div on-tap="{{incrementValue}}" class="subvalue">{{value + stepSize}}</div>
       </div>
     </div>
   </template>
